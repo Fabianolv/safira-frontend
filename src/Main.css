@@ -34,3 +34,44 @@ li.customer-item .account-info {
     flex-direction: row;
     justify-content: space-between;
 }
+
+li.customer-item .actions {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+li.customer-item .actions .update {
+    width: 45%;
+    height: 1.5rem;
+    color: #6b8194;
+    background-color: #fff;
+    border: 1px solid #6b8194;
+    transition: background 1s;
+}
+
+li.customer-item .actions .update:hover {
+    width: 45%;
+    height: 1.5rem;
+    color: #fff;
+    background-color: #6b8194;
+    border: 1px solid #fff;
+}
+
+li.customer-item .actions .delete {
+    width: 45%;
+    height: 1.5rem;
+    color: #e40934;
+    background-color: #fff;
+    border: 1px solid #e40934;
+    transition: background 1s;
+}
+
+li.customer-item .actions .delete:hover {
+    width: 45%;
+    height: 1.5rem;
+    color: #fff;
+    background-color: #e40934;
+    border: 1px solid #fff;
+}

@@ -60,6 +60,10 @@ function App() {
                 <strong>Created At: </strong>
                 <span>{customer.createdAt}</span>
               </div>
+              <div className="actions">
+                <button className="update" type="button">Update</button>
+                <button className="delete" type="submit">Delete</button>
+              </div>
             </li>
           ))}
         </ul>
