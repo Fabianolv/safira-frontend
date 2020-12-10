@@ -56,12 +56,14 @@ yarn start
 
 # Instalação Windows
 
-> ####Para Clonar o projeto em sua área de trabalho é necessário instalar o git
+
+
+> #### Para Clonar o projeto em sua área de trabalho é necessário instalar o git
 >
 > - instalação do git
 >
 
--Acesse ```[Git Download Page](https://git-scm.com/downloads)```
+-Acesse [Git Download Page](https://git-scm.com/downloads)
 
 -Escolha o sistema operacional windows, o download sera iniciado automaticamente.
 
@@ -93,7 +95,7 @@ rode os seguintes comandos no cmd
 Pronto, agora você já tem os projetos em sua máquina.
 
 
-###2- **Instalação do node.js**
+### 2- **Instalação do node.js**
 
 Acesse    [Página de download do node.js](https://nodejs.org/en/download/)
 
@@ -104,7 +106,7 @@ Acesse    [Página de download do node.js](https://nodejs.org/en/download/)
 Inicie a instalação 
 Aproveite para instalar o chocolatey 
 
-![Imagem mostrando a opção de instalar o chocolatey](readme-images/node-chocolatey-1.png)
+![Imagem mostrando a opção de instalar o chocolatey](assets/readme-images/node-chocolatey-1.png)
 
 Next, next, finish.
 
@@ -113,7 +115,7 @@ Após instalação irá abrir automaticamente o seu cmd, pressione qualquer tecl
 Isso pode levar alguns minutos...
 
 
-![Tela do terminal, indicando teclar enter para continuar](readme-images/install-chocolatey-2.png)
+![Tela do terminal, indicando teclar enter para continuar](assets/readme-images/install-chocolatey-2.png)
 
 Ao final da instalação aperte ENTER;
 
@@ -128,19 +130,19 @@ Digite -> ```choco install yarn```
 
 Digite-> ```A```, para aceitar rodar todos os Scripts “yes to All” - “sim para todos”
 
-![Imagem contendo os passos de instalação do yarn descritos acima](readme-images/yarn-installation-3.png)
+![Imagem contendo os passos de instalação do yarn descritos acima](assets/readme-images/yarn-installation-3.png)
 
 Após a instalação verifique:
 
 ```yarn -v```
 
-![Imagem mostrando tela do terminal com a versão do yarn](readme-images/yarn-install-completed-4.png)
+![Imagem mostrando tela do terminal com a versão do yarn](assets/readme-images/yarn-install-completed-4.png)
 
 
 *Prontinho, instalação concluída!*
 
 
-#### Rodar o projeto
+### Rodar o projeto
 
 
 Certifique-se de estar na pasta raiz do projeto **\safira-frontend**, para executar os comandos a seguir
