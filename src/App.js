@@ -8,6 +8,8 @@ import './Main.css';
 
 import { useEffect, useState } from 'react';
 import api from './config/api';
+import Input from './components/Input';
+import Aside from './components/Aside';
 
 function App() {
   const [customers, setCustumers] = useState([]);
@@ -22,31 +24,10 @@ function App() {
     loadCustumers();
   }, [])
 
+
   return (
     <div id="app">
-      <aside>
-        <form>
-            <div className="input-block">
-              <label>
-                First Name: 
-              </label>
-              <input type="text" />
-            </div>
-            <div className="input-block">
-              <label>
-                Last Name:
-              </label>
-              <input type="text" />
-            </div>
-            <div className="input-block">
-              <label>
-                Birthday: 
-              </label>
-              <input type="date" />
-            </div>
-            <button type="submit">Cadastrar</button>
-        </form>
-      </aside>
+      <Aside />
 
       <main>
         <ul>
