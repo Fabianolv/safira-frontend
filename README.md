@@ -37,6 +37,13 @@ node -v
 npm -v
 # 6.14.8
 ``` 
+
+Instalando o Yarn:
+
+```bash
+npm install -g yarn
+```
+
 #
 
 ## Executando o Projeto:

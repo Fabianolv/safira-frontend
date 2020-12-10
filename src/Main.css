@@ -48,6 +48,7 @@ li.customer-item .actions .update {
     color: #6b8194;
     background-color: #fff;
     border: 1px solid #6b8194;
+    cursor: pointer;
     transition: background 1s;
 }
 
@@ -65,6 +66,7 @@ li.customer-item .actions .delete {
     color: #e40934;
     background-color: #fff;
     border: 1px solid #e40934;
+    cursor: pointer;
     transition: background 1s;
 }
 
