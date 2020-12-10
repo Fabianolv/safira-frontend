@@ -38,7 +38,7 @@ li.customer-item .account-info {
 li.customer-item .actions {
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
+    margin-top: 2.1rem;
     justify-content: space-between;
 }
 
