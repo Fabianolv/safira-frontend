@@ -1,6 +1,3 @@
-import logo from './logo.svg';
-
-
 import './App.css';
 import './Sidebar.css';
 import './global.css';
@@ -8,7 +5,6 @@ import './Main.css';
 
 import { useEffect, useState } from 'react';
 import api from './config/api';
-import Input from './components/Input';
 import Aside from './components/Aside';
 
 function App() {
