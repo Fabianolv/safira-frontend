@@ -6,6 +6,7 @@ import './Main.css';
 import { useEffect, useState } from 'react';
 import api from './config/api';
 import Aside from './components/Aside';
+import CustomerCard from './components/CustomerCard';
 
 function App() {
   const [customers, setCustumers] = useState([]);
@@ -27,21 +28,8 @@ function App() {
 
       <main>
         <ul>
-          {customers.map(customer => (
-            <li key={customer.id} className="customer-item">
-              <header>
-                <strong>{`${customer.firstName} ${customer.lastName}`}</strong>
-                <span><strong>Birthday: </strong>{customer.birthday}</span>
-              </header>
-              <div className="account-info">
-                <strong>Created At: </strong>
-                <span>{customer.createdAt}</span>
-              </div>
-              <div className="actions">
-                <button className="update" type="button">Update</button>
-                <button className="delete" type="submit">Delete</button>
-              </div>
-            </li>
+          {customers?.map(customer => (
+            <CustomerCard key={customer.id} customer={customer} />
           ))}
         </ul>
       </main>
