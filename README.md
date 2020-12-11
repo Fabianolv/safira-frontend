@@ -110,34 +110,18 @@ Acesse    [Página de download do node.js](https://nodejs.org/en/download/)
 
 -abra o arquivo baixado
 
-Inicie a instalação 
-Aproveite para instalar o chocolatey 
-
-![Imagem mostrando a opção de instalar o chocolatey](assets/readme-images/node-chocolatey-1.png)
-
 Next, next, finish.
 
-Após instalação irá abrir automaticamente o seu cmd, pressione qualquer tecla para continuar e aguarde a instalação do chocolatey
-
-Isso pode levar alguns minutos...
-
-
-![Tela do terminal, indicando teclar enter para continuar](assets/readme-images/install-chocolatey-2.png)
-
-Ao final da instalação aperte ENTER;
 
 
 
 ### 3- INSTALAÇÃO YARN
 
-Abra o cmd como administrador, abra o menu iniciar do windows
-Digite cmd, clique com o botão direito do mouse “run as administrator”
+no terminal
 
-Digite -> ```choco install yarn```
+```npm install -g yarn```
 
-Digite-> ```A```, para aceitar rodar todos os Scripts “yes to All” - “sim para todos”
 
-![Imagem contendo os passos de instalação do yarn descritos acima](assets/readme-images/yarn-installation-3.png)
 
 Após a instalação verifique:
 
