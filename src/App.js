@@ -12,15 +12,14 @@ function App() {
   const [customers, setCustumers] = useState([]);
 
   useEffect(() => {
-    async function loadCustumers() { 
-        const customers = await api.get('/customer');
+    async function loadCustumers() {
+      const customers = await api.get('/customer');
 
-        setCustumers(customers.data);
+      setCustumers(customers.data);
     }
 
     loadCustumers();
-  }, [])
-
+  }, []);
 
   return (
     <div id="app">
@@ -28,7 +27,7 @@ function App() {
 
       <main>
         <ul>
-          {customers?.map(customer => (
+          {customers?.map((customer) => (
             <CustomerCard key={customer.id} customer={customer} />
           ))}
         </ul>
