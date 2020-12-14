@@ -9,7 +9,8 @@ function Aside() {
 
   console.log(birthday);
 
-  function onSubmit() {
+  function onSubmit(e) {
+    e.preventDefault();
     api.post("/customer", {
       firstName: firstName,
       lastName: lastName,
