@@ -145,9 +145,87 @@ iniciando o projeto
 ```yarn start```
 
 
+# UTILIZANDO SONAR-QUBE NO LINUX
+
+- No projeto do spring-boot executar o comando:
+
+```bash
+docker-compose up -d
+```
+
+- Intalar o sonar-scanner seguindo o tutorial presente no sonarqube para analisar o projeto.
+
+## Instalação por Docker:
+
+- Executar:
+
+```bash
+docker pull sonarsource/sonar-scanner-cli
+```
+
+- Em seguida executar o seguinte comando:
+
+```bash
+docker images
+```
+
+- Deverá aparecer algo semelhante a seguinte images:
+
+![Images mostrando as images do docker](assets/readme-images/docker-images.png)
+
+- Em seguida copie o IMAGE ID do **sonarsource/sonar-scanner-cli** e execute o seguinte comando:
+
+```bash
+docker run -i -t ${YOUR IMAGE ID}
+```
+
+## Instalação por arquivo zip:
+
+- Ao executar o sonarqube e iniciar um projeto novo no sonar, fazer o download do arquivo zip presente no link disponível e em seguida executar os seguintes comandos:
+
+```bash
+unzip ${nome-do-seu-arquivo}.zip
+sudo mv ${nome-do-seu-diretório}/ /opt/
+```
+
+- Em seguida adicionar o scanner no seu PATH seguinte as instruções:
+
+```bash
+gedit ~/.bashrc
+```
+
+- Vá até o final do arquivo e adicione na ultima linha:
+
+```bash
+export PATH=$PATH/opt/${nome-do-seu-diretorio}/bin/
+```
+
+- Em seguida execute o comando:
+
+```bash
+gedit /opt/${nome-do-seu-diretório}/conf/sonar-scanner.properties
+```
+
+- Irá aparecer algo semelhante a isso:
+
+![Imagem com configurações do sonar-scanner](assets/readme-images/sonar-scanner-config.png)
+
+- Agora basta descomentar as linhas
+
+```conf
+sonar.host.url=http://localhost:900
+# E A LINHA
+sonar.sourceEnconding=UTF-8
+``` 
 
 
+# EXECUTANDO O SONAR-SCANNER
 
+- Para executar o scanner basta utilizar o comando que ira aparecer em sua tela no sonar-qube ou adicionar o token gerado dentro do arquivo sonar-project.js e executar o comando:
+
+```bash
+yarn sonar
+```
 
 
 
