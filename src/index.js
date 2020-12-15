@@ -9,7 +9,6 @@ import './components/Aside/styles.css';
 import './components/CustomerCard/styles.css';
 import App from './App';
 
-
 ReactDOM.render(
   <React.StrictMode>
     <App />

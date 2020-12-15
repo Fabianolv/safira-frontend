@@ -1,5 +1,5 @@
-import { any } from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
 import api from '../../config/api';
 
 export default function CustomerCard({ customer }) {
@@ -43,5 +43,5 @@ export default function CustomerCard({ customer }) {
 }
 
 CustomerCard.propTypes = {
-  customer: any,
+  customer: PropTypes.objectOf(PropTypes.any).isRequired,
 };

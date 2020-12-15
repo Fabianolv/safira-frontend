@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CustomerCard from './components/CustomerCard/CustomerCard';
-import React from 'react';
 import api from './config/api';
 import Aside from './components/Aside/Aside';
 
@@ -9,9 +8,9 @@ function App() {
 
   useEffect(() => {
     async function loadCustumers() {
-      const customers = await api.get('/customer');
+      const response = await api.get('/customer');
 
-      setCustumers(customers.data);
+      setCustumers(response.data);
     }
     loadCustumers();
   }, []);
@@ -29,4 +28,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

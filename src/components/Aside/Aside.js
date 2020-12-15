@@ -2,20 +2,17 @@ import React, { useState } from 'react';
 import api from '../../config/api';
 import Input from '../Input/Input';
 
-
 function Aside() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [birthday, setBirthday] = useState('');
 
-  console.log(birthday);
-
-  function onSubmit(e) {
-    e.preventDefault();
+  function onSubmit(event) {
+    event.preventDefault();
     api
       .post('/customer', {
-        firstName: firstName,
-        lastName: lastName,
+        firstName,
+        lastName,
         birthday: birthday.split('-').reverse().join('/'),
       })
       .then((respose) => console.log(respose))
