@@ -4,48 +4,49 @@ import Input from '../Input/Input';
 
 
 function Aside() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [birthday, setBirthday] = useState("");
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [birthday, setBirthday] = useState('');
 
   console.log(birthday);
 
   function onSubmit(e) {
     e.preventDefault();
-    api.post("/customer", {
-      firstName: firstName,
-      lastName: lastName,
-      birthday: birthday.split('-').reverse().join('/')
-    })
-    .then((respose) => console.log(respose))
-    .catch(e => console.error(e));
+    api
+      .post('/customer', {
+        firstName: firstName,
+        lastName: lastName,
+        birthday: birthday.split('-').reverse().join('/'),
+      })
+      .then((respose) => console.log(respose))
+      .catch((e) => console.error(e));
   }
 
   return (
     <aside>
       <form onSubmit={onSubmit}>
-        <Input 
-          label="First Name" 
-          type="text" 
-          value={firstName} 
+        <Input
+          label="First Name"
+          type="text"
+          value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
         />
-        <Input 
-          label="Last Name" 
-          type="text" 
+        <Input
+          label="Last Name"
+          type="text"
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
         />
-        <Input 
-          label="Birthday" 
-          type="date" 
+        <Input
+          label="Birthday"
+          type="date"
           value={birthday}
           onChange={(e) => setBirthday(e.target.value)}
         />
         <button type="submit">Cadastrar</button>
       </form>
     </aside>
-  )
+  );
 }
 
 export default Aside;
