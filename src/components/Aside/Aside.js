@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import api from '../config/api';
-import Input from './Input';
+import api from '../../config/api';
+import Input from '../Input/Input';
+
 
 function Aside() {
   const [firstName, setFirstName] = useState("");

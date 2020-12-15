@@ -1,12 +1,10 @@
-import './App.css';
-import './Sidebar.css';
-import './global.css';
-import './Main.css';
-
 import { useEffect, useState } from 'react';
+import CustomerCard from './components/CustomerCard/CustomerCard';
+import React from 'react';
+
 import api from './config/api';
-import Aside from './components/Aside';
-import CustomerCard from './components/CustomerCard';
+import Aside from './components/Aside/Aside';
+
 
 function App() {
   const [customers, setCustumers] = useState([]);

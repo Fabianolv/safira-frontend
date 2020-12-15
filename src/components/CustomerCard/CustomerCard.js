@@ -1,6 +1,6 @@
 import { any } from 'prop-types';
-import React, { useReducer } from 'react';
-import api from '../config/api';
+import React from 'react';
+import api from '../../config/api';
 
 
 export default function CustomerCard({customer}) {
