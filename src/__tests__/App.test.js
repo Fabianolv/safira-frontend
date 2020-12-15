@@ -2,9 +2,9 @@ import React from 'react';
 import { configure, shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
-import App from '../App.js';
-import Aside from '../components/Aside/Aside.js';
-import CustomerCard from '../components/CustomerCard/CustomerCard.js';
+import App from '../App';
+import Aside from '../components/Aside/Aside';
+import CustomerCard from '../components/CustomerCard/CustomerCard';
 
 
 

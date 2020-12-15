@@ -28,5 +28,8 @@ yarn-error.log*
 # sonar
 .scannerwork/
 
+#reports
+test-report.xml
+
 
 
