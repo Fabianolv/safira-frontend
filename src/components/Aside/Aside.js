@@ -7,8 +7,7 @@ function Aside() {
   const [lastName, setLastName] = useState('');
   const [birthday, setBirthday] = useState('');
 
-  function onSubmit(event) {
-    event.preventDefault();
+  function onSubmit() {
     api
       .post('/customer', {
         firstName,
@@ -16,7 +15,6 @@ function Aside() {
         birthday: birthday.split('-').reverse().join('/'),
       })
       .then((respose) => {
-        window.location.reload();
         console.log(respose);
       })
       .catch((e) => console.error(e));
