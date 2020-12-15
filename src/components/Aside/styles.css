@@ -10,7 +10,7 @@ aside form .input-block + .input-block {
   margin-top: 20px;
 }
 
-aside form .input-block label {
+aside form .input-block p {
   color: #698195;
   font-size: 14px;
   font-weight: bold;
