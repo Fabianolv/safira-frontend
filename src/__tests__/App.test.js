@@ -10,11 +10,17 @@ import CustomerCard from '../components/CustomerCard/CustomerCard';
 
 configure({ adapter: new Adapter() });
 
-it("renders without crashing", () => {
-  shallow(<Aside />);
+describe("Render each component alone", ()=>{
+  it("Renders Aside without crashing", () => {
+    shallow(<Aside />);
+  });
+  it("Renders CustomerCard without crashing", () => {
+    shallow(<CustomerCard />);
+  });
 });
 
-describe("render with sons", ()=>{
+
+describe("Render with child components", ()=>{
   const wrapper = shallow(<App />);
 
   it("Should contain Aside", () => {
