@@ -1,10 +1,6 @@
 import { any } from 'prop-types';
 import React from 'react';
-<<<<<<< HEAD:src/components/CustomerCard/CustomerCard.js
 import api from '../../config/api';
-=======
-import api from '../config/api';
->>>>>>> 014c779033e9b1c6d0030223ba89cac32761dd2e:src/components/CustomerCard.js
 
 export default function CustomerCard({ customer }) {
   function deleteCustomer(id) {
