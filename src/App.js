@@ -10,7 +10,7 @@ function App() {
     async function loadCustumers() {
       const response = await api.get('/customer');
 
-      setCustumers(response.data);
+      setCustumers([...customers, response.data]);
     }
     loadCustumers();
   }, []);

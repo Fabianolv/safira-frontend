@@ -15,7 +15,10 @@ function Aside() {
         lastName,
         birthday: birthday.split('-').reverse().join('/'),
       })
-      .then((respose) => console.log(respose))
+      .then((respose) => {
+        window.location.reload();
+        console.log(respose);
+      })
       .catch((e) => console.error(e));
   }
 
