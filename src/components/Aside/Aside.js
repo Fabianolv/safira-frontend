@@ -22,7 +22,7 @@ function Aside() {
 
   return (
     <aside>
-      <form onSubmit={onSubmit}>
+      <form data-testid="form-submit" onSubmit={onSubmit}>
         <Input
           label="First Name"
           type="text"

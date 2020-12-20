@@ -7,7 +7,7 @@ function Input({
   return (
     <div className="input-block">
       <p>{label}</p>
-      <input type={type} onChange={onChange} value={value} />
+      <input data-testid={`${label}`} type={type} onChange={onChange} value={value} />
     </div>
   );
 }
