@@ -211,3 +211,11 @@ sonar.sourceEnconding=UTF-8
 ```bash
 yarn sonar
 ```
+
+# Extenções para VSCODE
+
+[![Imagem da extenção error-lens](assets/readme-images/error-lens.png)](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+
+[![Imagem da extenção eslint](assets/readme-images/eslint.png)](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+[![Imagem da extenção prettier](assets/readme-images/prettier.png)](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
